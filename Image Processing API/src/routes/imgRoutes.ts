@@ -13,10 +13,12 @@ router.get('/', async (req: Request, res: Response) => {
 
     if (filename == null)       // Input validations
         return res.status(400).send('Filename is required');
-    if (width == null || width <= 0)
+    if (isNaN(width) || width <= 0) {
         return res.status(400).send('Invalid width');
-    if (height == null || height <= 0)
+    }
+    if (isNaN(height) || height <= 0) {
         return res.status(400).send('Invalid height');
+    }
 
     const originalFile = path.join(__dirname, '../../images', filename + '.jpg');
     const thumbnailFile = path.join(__dirname, '../../thumbnails', `${filename}_${width}_${height}.jpg`);

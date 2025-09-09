@@ -9,10 +9,10 @@
     // See also https://aka.ms/tsconfig/module
     "module": "CommonJS",
     "target": "ES6",
-    "types": [],
+    //"types": [],
     // For nodejs:
     "lib": ["ES6"],
-    // "types": ["node"],
+    "types": ["node", "jasmine"],
     // and npm install -D @types/node
     "esModuleInterop": true,
 
@@ -43,6 +43,6 @@
     "skipLibCheck": true,
   },
     
-  "include": ["src/**/*.ts"],
-  "exclude": ["node_modules", "dist"]
+  "include": ["src/**/*.ts","src/tests/**/*.ts"],
+  "exclude": ["node_modules", "dist", "spec"]
 }
