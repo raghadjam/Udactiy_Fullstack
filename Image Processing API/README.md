@@ -12,8 +12,7 @@ The project is built with **TypeScript**, **Express**, and includes **unit + API
 
 1. Clone the repository:
    ```bash
-   git clone <your-repo-url>
-   cd <your-project-folder>
+   git clone https://github.com/raghadjam/Udactiy_Fullstack/
 ````
 
 2. Install dependencies:
