@@ -73,7 +73,7 @@ Resize an image and return the processed file.
 
 **Example Request:**
 
-```http
+```
 http://localhost:3000/api/images?filename=fjord&width=200&height=200
 ```
 
@@ -104,17 +104,6 @@ npm test
 
 ---
 
-## Project Structure
-
-```
-src/
-  routes/        # Express routes
-  tests/         # Unit and integration tests
-  utils/         # Utility functions (image processing)
-  server.ts      # Entry point
-images/          # Input images
-thumbnails/      # Cached resized images
-```
 
 ```
 
