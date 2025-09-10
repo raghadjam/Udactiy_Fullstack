@@ -1,5 +1,4 @@
 
-````markdown
 # Image Processing API
 
 ## Overview
